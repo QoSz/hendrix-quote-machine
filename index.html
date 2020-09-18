@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Jimi Hendrix Quote Machine</title>
+    <script>
+        function play(str) {
+          
+
+          if (str === "q" || str === "Q") {
+            document.getElementById('display').innerHTML = "On Compliments";
+          }  else if (str === "w" || str === "W") {
+            document.getElementById('display').innerHTML = "On Money";
+          } else if (str === "e" || str === "E") {
+            document.getElementById('display').innerHTML = "On Discipline";
+          } else if (str === "a" || str === "A") {
+            document.getElementById('display').innerHTML = "On Age";
+          } else if (str === "s" || str === "S") {
+            document.getElementById('display').innerHTML = "On Aduience";
+          } else if (str === "d" || str === "D") {
+            document.getElementById('display').innerHTML = "On Bombing";
+          } else if (str === "z" || str === "Z") {
+            document.getElementById('display').innerHTML = "On Music";
+          } else if (str === "x" || str === "X") {
+            document.getElementById('display').innerHTML = "On Protesting";
+          } else if (str === "c" || str === "C") {
+            document.getElementById('display').innerHTML = "On Rock Music";
+          }
+
+          
+          var audio = document.getElementById(str);
+          audio.play();
+        }
+
+        window.document.onkeyup = function(event) { 
+          let str = event.key
+
+          }
+    </script>
+  </head>
+  <body>
+    <dclass="container" id="drum-machine">
+        <class="text-center">Jimi Hendrix Quote Machine</h1>
+        <div class="card my-3">
+          <div class="card-body">
+          <div class="text-center" id="display">Nothing yet to display</div>
+          </div>
+        </div>
+      
+   <button class="drum-pad btn btn-block btn-primary " id="drum-0" onclick="play('Q')">
+            Q
+            <audio src="./clip/q-on-compliments.m4a" class="clip" id="Q"></audio>
+        </button>
+        <button class="drum-pad btn btn-block btn-primary " id="drum-1" onclick="play('W')">
+          W
+          <audio src="./clip/w-on-money.m4a" class="clip" id="W"></audio>
+      </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-2" onclick="play('E')">
+            E
+            <audio src="./clip/e-on-discipline.m4a" class="clip" id="E"></audio>
+        </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-3" onclick="play('A')">
+            A
+            <audio src="./clip/a-on-age.m4a" class="clip" id="A"></audio>
+        </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-4" onclick="play('S')">
+            S
+            <audio src="./clip/s-on-audience.m4a" class="clip" id="S"></audio>
+        </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-5" onclick="play('D')">
+            D
+            <audio src="./clip/d-on-bombing.m4a" class="clip" id="D"></audio>
+        </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-6" onclick="play('Z')">
+            Z
+            <audio src="./clip/z-on-music-philosophy.m4a" class="clip" id="Z"></audio>
+        </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-7" onclick="play('X')">
+            X
+            <audio src="./clip/x-on-protesting.m4a" class="clip" id="X"></audio>
+        </button>
+   <button class="drum-pad btn btn-block btn-primary " id="drum-8" onclick="play('C')">
+            C
+            <audio src="./clip/c-on-rock-music.m4a" class="clip" id="C"></audio>
+        </button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="httpHello, world!s://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
